@@ -42,15 +42,3 @@ targets:
     configFiles:
       Debug: configs/Core.xcconfig
       Release: configs/Core.xcconfig
-  #macOS command line tool
-  Ed25519SparkleHelper:
-    platform: macOS
-    type: tool
-    sources:
-      - Ed25519SparkleHelper
-    configFiles:
-      Debug: configs/Ed25519SparkleHelper-Debug.xcconfig
-      Release: configs/Ed25519SparkleHelper-Release.xcconfig
-    scheme:
-      environmentVariables:
-        ENABLE_SIGNPOST: YES
