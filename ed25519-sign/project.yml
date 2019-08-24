@@ -1,0 +1,15 @@
+name: Ed25519SignatureHelper
+options:
+  minimumXcodeGenVersion: 2.2.0
+targets:
+  Ed25519SignatureHelper:
+    platform: macOS
+    type: tool
+    sources:
+      - Ed25519SignatureHelper
+    configFiles:
+      Debug: configs/Ed25519SignatureHelper-Debug.xcconfig
+      Release: configs/Ed25519SignatureHelper-Release.xcconfig
+    scheme:
+      environmentVariables:
+        ENABLE_SIGNPOST: YES

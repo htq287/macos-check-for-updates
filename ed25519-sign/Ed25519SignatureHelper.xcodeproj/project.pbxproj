@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0962AABF938C36938C216021ED813675 /* SwiftEd25519Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562AF66781334CF67E000955EF6EA89F /* SwiftEd25519Error.swift */; };
+		28232540FA19E437A19A0B12CE73C9B0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A738AA584693ABD1AAEC06EA77B260 /* main.swift */; };
+		2F1BAFF48B154E331B36751F1082219B /* ge.c in Sources */ = {isa = PBXBuildFile; fileRef = 874DEEB56412A9148F8CEDEB34BAC5A4 /* ge.c */; };
+		48BF698B894679179EB64D923B7DF84E /* keypair.c in Sources */ = {isa = PBXBuildFile; fileRef = DE3E27ED68E92B6320502A55E9BCA66E /* keypair.c */; };
+		4C256C84B02F66F43D9D18F77FED58D3 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = E1626BB2E3AB9E88B24BB0501AE9EFE0 /* license.txt */; };
+		56B3BD1A79591D7E578B1EC645626E08 /* SwiftEd25519KeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8AFBD250E28083FC82E1303843444E /* SwiftEd25519KeyPair.swift */; };
+		62DED390BDB64126AE0CD5B5B5C84820 /* sc.c in Sources */ = {isa = PBXBuildFile; fileRef = 7304913431AB5DC0915C2967CC75CD02 /* sc.c */; };
+		76359E7DF1BB1F682E519802CB6F7B39 /* SwiftEd25519PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F400CA2068BD852EC0954A4691C7BC7 /* SwiftEd25519PublicKey.swift */; };
+		7B902416FE1232D32F423171AD5A588F /* add_scalar.c in Sources */ = {isa = PBXBuildFile; fileRef = 2FD4A59834FA823446152F51235F8CF0 /* add_scalar.c */; };
+		888FB35609F8CE324601AE05052AE58F /* seed.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C1BABBD824C76C07827CB543B4A2BDE /* seed.c */; };
+		8CBBD528B67C97BDD7BABA85713038E8 /* verify.c in Sources */ = {isa = PBXBuildFile; fileRef = F6F56FA297345D271C40D150DC2B5503 /* verify.c */; };
+		A5C7BC5E077BD171F8F0FFE71E822738 /* ed25519_64.dll in Resources */ = {isa = PBXBuildFile; fileRef = BE39BB7E70676C45EBB215AC6DC365FF /* ed25519_64.dll */; };
+		ACB1FAD3486DAD2E7097A93416976181 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = AD6CAC9A8161BA6BA8169B218DC3A0AB /* readme.md */; };
+		CD0151730A0560C7BBC1B9A89AA1A96D /* SwiftEd25519PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7A2FA254C3FB884B2331DB9744FCCB /* SwiftEd25519PrivateKey.swift */; };
+		CE02527F413C0D632722C4562B6EB6AF /* sign.c in Sources */ = {isa = PBXBuildFile; fileRef = 913D209644173B8205577150D8FFE67C /* sign.c */; };
+		CE3D37715E87639ED9690F421BB7B408 /* SwiftEd25519Seed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F6BAE0A341FEBC2777C5C5853EC634 /* SwiftEd25519Seed.swift */; };
+		D33C1ED1FCFFF19E3DAA6DE9C1BB0F9E /* sha512.c in Sources */ = {isa = PBXBuildFile; fileRef = EA38A4796AD9B3204D29F7DD18E7ED2F /* sha512.c */; };
+		DAD4969FB2954D129576D99D11F33C20 /* fe.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E39D62AC1127ECF3A69A2C0267C2CD0 /* fe.c */; };
+		E1020F7872DB9ED045CD5CAC187AFF8A /* key_exchange.c in Sources */ = {isa = PBXBuildFile; fileRef = E071FD485B3BC630DA94435857860CE7 /* key_exchange.c */; };
+		E5F1A75FF3F11DD7EA7F54364D590E8F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0F262883FC49162877740CFC615D9B /* Utils.swift */; };
+		EC7909CAD8C6180406C6CBD6B6870F41 /* ed25519_32.dll in Resources */ = {isa = PBXBuildFile; fileRef = 6BE752202CE6EB1C521C0E4D4E44BB35 /* ed25519_32.dll */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C1BABBD824C76C07827CB543B4A2BDE /* seed.c */ = {isa = PBXFileReference; path = seed.c; sourceTree = "<group>"; };
+		0E39D62AC1127ECF3A69A2C0267C2CD0 /* fe.c */ = {isa = PBXFileReference; path = fe.c; sourceTree = "<group>"; };
+		2B47C6C17824E758D3DCE46AA0EF9692 /* fixedint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fixedint.h; sourceTree = "<group>"; };
+		2E58443ED10D6DB02AB8B0F69D31114E /* sc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sc.h; sourceTree = "<group>"; };
+		2FD4A59834FA823446152F51235F8CF0 /* add_scalar.c */ = {isa = PBXFileReference; path = add_scalar.c; sourceTree = "<group>"; };
+		397F654CE7F3353B7AF79EEAF3B0B2BD /* precomp_data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = precomp_data.h; sourceTree = "<group>"; };
+		3B3795560D504A833478D4AFB66BBE14 /* sha512.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sha512.h; sourceTree = "<group>"; };
+		3FEE9AA7D7622619671C2F3E08CCC023 /* Ed25519SignatureHelper */ = {isa = PBXFileReference; includeInIndex = 0; path = Ed25519SignatureHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		4581E0AFD448CD615BA9A57A7EA7CF20 /* ed25519.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ed25519.h; sourceTree = "<group>"; };
+		46E028A15F0EE7ED7D68AD6451321684 /* Ed25519SignatureHelper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ed25519SignatureHelper-Bridging-Header.h"; sourceTree = "<group>"; };
+		4BE86711358FDFA57515D52B206A9151 /* Ed25519SignatureHelper-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Ed25519SignatureHelper-Release.xcconfig"; sourceTree = "<group>"; };
+		562AF66781334CF67E000955EF6EA89F /* SwiftEd25519Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftEd25519Error.swift; sourceTree = "<group>"; };
+		6BE752202CE6EB1C521C0E4D4E44BB35 /* ed25519_32.dll */ = {isa = PBXFileReference; path = ed25519_32.dll; sourceTree = "<group>"; };
+		7304913431AB5DC0915C2967CC75CD02 /* sc.c */ = {isa = PBXFileReference; path = sc.c; sourceTree = "<group>"; };
+		7A0F262883FC49162877740CFC615D9B /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		7E7A2FA254C3FB884B2331DB9744FCCB /* SwiftEd25519PrivateKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftEd25519PrivateKey.swift; sourceTree = "<group>"; };
+		874DEEB56412A9148F8CEDEB34BAC5A4 /* ge.c */ = {isa = PBXFileReference; path = ge.c; sourceTree = "<group>"; };
+		8F400CA2068BD852EC0954A4691C7BC7 /* SwiftEd25519PublicKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftEd25519PublicKey.swift; sourceTree = "<group>"; };
+		913D209644173B8205577150D8FFE67C /* sign.c */ = {isa = PBXFileReference; path = sign.c; sourceTree = "<group>"; };
+		941DECF5AF7D82411BD4A5E64A2584F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94F6BAE0A341FEBC2777C5C5853EC634 /* SwiftEd25519Seed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftEd25519Seed.swift; sourceTree = "<group>"; };
+		AD6CAC9A8161BA6BA8169B218DC3A0AB /* readme.md */ = {isa = PBXFileReference; path = readme.md; sourceTree = "<group>"; };
+		BE39BB7E70676C45EBB215AC6DC365FF /* ed25519_64.dll */ = {isa = PBXFileReference; path = ed25519_64.dll; sourceTree = "<group>"; };
+		C1080746816CED6DD8356DDF63781182 /* ge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ge.h; sourceTree = "<group>"; };
+		DE3E27ED68E92B6320502A55E9BCA66E /* keypair.c */ = {isa = PBXFileReference; path = keypair.c; sourceTree = "<group>"; };
+		DF7B02AAB0261AEDABF8E7748A39FDC5 /* Ed25519SignatureHelper-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Ed25519SignatureHelper-Debug.xcconfig"; sourceTree = "<group>"; };
+		E071FD485B3BC630DA94435857860CE7 /* key_exchange.c */ = {isa = PBXFileReference; path = key_exchange.c; sourceTree = "<group>"; };
+		E1626BB2E3AB9E88B24BB0501AE9EFE0 /* license.txt */ = {isa = PBXFileReference; path = license.txt; sourceTree = "<group>"; };
+		EA38A4796AD9B3204D29F7DD18E7ED2F /* sha512.c */ = {isa = PBXFileReference; path = sha512.c; sourceTree = "<group>"; };
+		F08D0FE48DA8FC0950C5FA1454A04E3E /* fe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fe.h; sourceTree = "<group>"; };
+		F5A738AA584693ABD1AAEC06EA77B260 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F6F56FA297345D271C40D150DC2B5503 /* verify.c */ = {isa = PBXFileReference; path = verify.c; sourceTree = "<group>"; };
+		FE8AFBD250E28083FC82E1303843444E /* SwiftEd25519KeyPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftEd25519KeyPair.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0F35C7B2027B623FFFA20BC84A8AA143 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F5A738AA584693ABD1AAEC06EA77B260 /* main.swift */,
+				5277A062C74972B2B5E74E4897E0315E /* ed25519 */,
+				1D3D608C09F514C1906956C9E16761A8 /* SwiftEd25519 */,
+				E5AB86ADF254521B21514DFC90999AFA /* utils */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		1D3D608C09F514C1906956C9E16761A8 /* SwiftEd25519 */ = {
+			isa = PBXGroup;
+			children = (
+				562AF66781334CF67E000955EF6EA89F /* SwiftEd25519Error.swift */,
+				FE8AFBD250E28083FC82E1303843444E /* SwiftEd25519KeyPair.swift */,
+				7E7A2FA254C3FB884B2331DB9744FCCB /* SwiftEd25519PrivateKey.swift */,
+				8F400CA2068BD852EC0954A4691C7BC7 /* SwiftEd25519PublicKey.swift */,
+				94F6BAE0A341FEBC2777C5C5853EC634 /* SwiftEd25519Seed.swift */,
+			);
+			path = SwiftEd25519;
+			sourceTree = "<group>";
+		};
+		25A6C441DDCE5FA02CB3F9DBEBE33FD2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				2FD4A59834FA823446152F51235F8CF0 /* add_scalar.c */,
+				4581E0AFD448CD615BA9A57A7EA7CF20 /* ed25519.h */,
+				0E39D62AC1127ECF3A69A2C0267C2CD0 /* fe.c */,
+				F08D0FE48DA8FC0950C5FA1454A04E3E /* fe.h */,
+				2B47C6C17824E758D3DCE46AA0EF9692 /* fixedint.h */,
+				874DEEB56412A9148F8CEDEB34BAC5A4 /* ge.c */,
+				C1080746816CED6DD8356DDF63781182 /* ge.h */,
+				E071FD485B3BC630DA94435857860CE7 /* key_exchange.c */,
+				DE3E27ED68E92B6320502A55E9BCA66E /* keypair.c */,
+				397F654CE7F3353B7AF79EEAF3B0B2BD /* precomp_data.h */,
+				7304913431AB5DC0915C2967CC75CD02 /* sc.c */,
+				2E58443ED10D6DB02AB8B0F69D31114E /* sc.h */,
+				0C1BABBD824C76C07827CB543B4A2BDE /* seed.c */,
+				EA38A4796AD9B3204D29F7DD18E7ED2F /* sha512.c */,
+				3B3795560D504A833478D4AFB66BBE14 /* sha512.h */,
+				913D209644173B8205577150D8FFE67C /* sign.c */,
+				F6F56FA297345D271C40D150DC2B5503 /* verify.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		47A53B6F791A3DA82373B0B204287742 /* configs */ = {
+			isa = PBXGroup;
+			children = (
+				DF7B02AAB0261AEDABF8E7748A39FDC5 /* Ed25519SignatureHelper-Debug.xcconfig */,
+				4BE86711358FDFA57515D52B206A9151 /* Ed25519SignatureHelper-Release.xcconfig */,
+			);
+			path = configs;
+			sourceTree = "<group>";
+		};
+		5277A062C74972B2B5E74E4897E0315E /* ed25519 */ = {
+			isa = PBXGroup;
+			children = (
+				6BE752202CE6EB1C521C0E4D4E44BB35 /* ed25519_32.dll */,
+				BE39BB7E70676C45EBB215AC6DC365FF /* ed25519_64.dll */,
+				E1626BB2E3AB9E88B24BB0501AE9EFE0 /* license.txt */,
+				AD6CAC9A8161BA6BA8169B218DC3A0AB /* readme.md */,
+				25A6C441DDCE5FA02CB3F9DBEBE33FD2 /* src */,
+			);
+			path = ed25519;
+			sourceTree = "<group>";
+		};
+		5321B0FF7A0F819ECEEC9D2BAA8AEBC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FEE9AA7D7622619671C2F3E08CCC023 /* Ed25519SignatureHelper */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D37F0C254B44621758D67659E59255F /* Ed25519SignatureHelper */ = {
+			isa = PBXGroup;
+			children = (
+				46E028A15F0EE7ED7D68AD6451321684 /* Ed25519SignatureHelper-Bridging-Header.h */,
+				941DECF5AF7D82411BD4A5E64A2584F5 /* Info.plist */,
+				0F35C7B2027B623FFFA20BC84A8AA143 /* Sources */,
+			);
+			path = Ed25519SignatureHelper;
+			sourceTree = "<group>";
+		};
+		C56AB9AC411562554C3EDEDDBC2CD9EC = {
+			isa = PBXGroup;
+			children = (
+				47A53B6F791A3DA82373B0B204287742 /* configs */,
+				7D37F0C254B44621758D67659E59255F /* Ed25519SignatureHelper */,
+				5321B0FF7A0F819ECEEC9D2BAA8AEBC3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E5AB86ADF254521B21514DFC90999AFA /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				7A0F262883FC49162877740CFC615D9B /* Utils.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72EB4D1F2C5004F417D8F908E91AAF65 /* Ed25519SignatureHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 984BEAD091297533AC60299A5592367D /* Build configuration list for PBXNativeTarget "Ed25519SignatureHelper" */;
+			buildPhases = (
+				0BE7F6CF37B5AD12A2EA4F88F0D3EEEE /* Sources */,
+				35B71C0DAAD30487493F88FF3570104E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ed25519SignatureHelper;
+			productName = Ed25519SignatureHelper;
+			productReference = 3FEE9AA7D7622619671C2F3E08CCC023 /* Ed25519SignatureHelper */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A004A8DB9A82FF4AAE6F1B22540C421B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 284EB9FB9A5BF6D0039962F19816DD42 /* Build configuration list for PBXProject "Ed25519SignatureHelper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C56AB9AC411562554C3EDEDDBC2CD9EC;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72EB4D1F2C5004F417D8F908E91AAF65 /* Ed25519SignatureHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35B71C0DAAD30487493F88FF3570104E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7909CAD8C6180406C6CBD6B6870F41 /* ed25519_32.dll in Resources */,
+				A5C7BC5E077BD171F8F0FFE71E822738 /* ed25519_64.dll in Resources */,
+				4C256C84B02F66F43D9D18F77FED58D3 /* license.txt in Resources */,
+				ACB1FAD3486DAD2E7097A93416976181 /* readme.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BE7F6CF37B5AD12A2EA4F88F0D3EEEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0962AABF938C36938C216021ED813675 /* SwiftEd25519Error.swift in Sources */,
+				56B3BD1A79591D7E578B1EC645626E08 /* SwiftEd25519KeyPair.swift in Sources */,
+				CD0151730A0560C7BBC1B9A89AA1A96D /* SwiftEd25519PrivateKey.swift in Sources */,
+				76359E7DF1BB1F682E519802CB6F7B39 /* SwiftEd25519PublicKey.swift in Sources */,
+				CE3D37715E87639ED9690F421BB7B408 /* SwiftEd25519Seed.swift in Sources */,
+				E5F1A75FF3F11DD7EA7F54364D590E8F /* Utils.swift in Sources */,
+				7B902416FE1232D32F423171AD5A588F /* add_scalar.c in Sources */,
+				DAD4969FB2954D129576D99D11F33C20 /* fe.c in Sources */,
+				2F1BAFF48B154E331B36751F1082219B /* ge.c in Sources */,
+				E1020F7872DB9ED045CD5CAC187AFF8A /* key_exchange.c in Sources */,
+				48BF698B894679179EB64D923B7DF84E /* keypair.c in Sources */,
+				28232540FA19E437A19A0B12CE73C9B0 /* main.swift in Sources */,
+				62DED390BDB64126AE0CD5B5B5C84820 /* sc.c in Sources */,
+				888FB35609F8CE324601AE05052AE58F /* seed.c in Sources */,
+				D33C1ED1FCFFF19E3DAA6DE9C1BB0F9E /* sha512.c in Sources */,
+				CE02527F413C0D632722C4562B6EB6AF /* sign.c in Sources */,
+				8CBBD528B67C97BDD7BABA85713038E8 /* verify.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5F5CE78A47C8617CC459A2A51C9B83A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		70B5B4B73873F0BC8C6C926CAEED38FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		778641CA6955204ECA365B24840F77AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF7B02AAB0261AEDABF8E7748A39FDC5 /* Ed25519SignatureHelper-Debug.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Ed25519SignatureHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+			};
+			name = Debug;
+		};
+		C154793F3964FC7F6C8065482211BA8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BE86711358FDFA57515D52B206A9151 /* Ed25519SignatureHelper-Release.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Ed25519SignatureHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		284EB9FB9A5BF6D0039962F19816DD42 /* Build configuration list for PBXProject "Ed25519SignatureHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F5CE78A47C8617CC459A2A51C9B83A5 /* Debug */,
+				70B5B4B73873F0BC8C6C926CAEED38FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		984BEAD091297533AC60299A5592367D /* Build configuration list for PBXNativeTarget "Ed25519SignatureHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				778641CA6955204ECA365B24840F77AA /* Debug */,
+				C154793F3964FC7F6C8065482211BA8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A004A8DB9A82FF4AAE6F1B22540C421B /* Project object */;
+}
