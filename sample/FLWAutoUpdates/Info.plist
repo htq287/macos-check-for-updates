@@ -17,27 +17,16 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.0.1</string>
+	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>0.0.1</string>
+	<string>1</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2019 Hung Truong. All rights reserved.</string>
+	<string>Copyright © 2019 Floware. All rights reserved.</string>
 	<key>NSMainStoryboardFile</key>
 	<string>Main</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
-	<key>SUEnableSystemProfiling</key>
-	<true/>
-	<key>SUFeedURL</key>
-	<string>http://localhost:3005/drive/api/files/appcast.xml</string>
-	<key>SUPublicEDKey</key>
-	<string>eRFPLZuNM6m8bltmtpPX4fzKbufI1z6rKJHtgIIsllk=</string>
 </dict>
 </plist>

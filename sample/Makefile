@@ -2,15 +2,15 @@ SHELL := /bin/bash
 CWD := $(shell cd -P -- '$(shell dirname -- "$0")' && pwd -P)
 
 BUILD_DIR		:= ./build
-PROJECT			:= OsxCheckForUpdates.xcodeproj
+PROJECT			:= FLWAutoUpdates.xcodeproj
 
 # sdks
 TARGET_SDK		:= macosx
 
 # targets
-TARGET			:= OsxCheckForUpdates
-TEST_TARGET		:= OsxCheckForUpdatesTests
-UITEST_TARGET	:= OsxCheckForUpdatesTests
+TARGET			:= FLWAutoUpdates
+TEST_TARGET		:= FLWAutoUpdatesTests
+UITEST_TARGET	:= FLWAutoUpdatesTests
 
 # configs
 CF_DEBUG		:= ./configs/Debug.xcconfig
@@ -20,16 +20,16 @@ CF_RELEASE		:= ./configs/Release.xcconfig
 RELEASE_VERSION	:= 0.0.2
 
 #resources for deploying
-APP_DMG_FILENAME 	:= OsxCheckForUpdates.dmg
+APP_DMG_FILENAME 	:= FLWAutoUpdates.dmg
 APP_DMG_FILEPATH 	:= $(CWD)/build/deploy/$(APP_DMG_FILENAME)
-APP_NAME 			:= OsxCheckForUpdates
+APP_NAME 			:= FLWAutoUpdates
 APP_FILENAME 		:= $(CWD)/build/deploy/$(APP_NAME).app
 APP_ZIPFILE			:= $(CWD)/build/deploy/$(APP_NAME)-$(RELEASE_VERSION).zip
 APP_UPDATER_CAST	:= $(CWD)/build/deploy/appcast.xml
 
 
 #report
-REPORT := OsxCheckForUpdates_Unit_Testing_Report.txt
+REPORT := FLWAutoUpdates_Unit_Testing_Report.txt
 
 #slack
 SLACK_CHANNEL_TESTS	:= tests
@@ -70,7 +70,7 @@ release: clean build
 	# cd scripts && pwd && ./create-dmg
 
 	# Create updater.xlm (Sparkle format)
-	cp -r ./OsxCheckForUpdates/Sources/Starter/appcast.xml $(BUILD_DIR)/deploy
+	cp -r ./FLWAutoUpdates/Sources/Starter/appcast.xml $(BUILD_DIR)/deploy
 
 		#zip resources
 	@echo $(APP_NAME)

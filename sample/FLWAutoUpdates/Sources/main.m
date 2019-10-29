@@ -1,9 +1,9 @@
 //
 //  main.m
-//  OsxCheckForUpdates
+//  FLWAutoUpdates
 //
-//  Created by Hung Truong on 5/6/19.
-//  Copyright © 2019 Hung Truong. All rights reserved.
+//  Created by Created by Hung Q. Truong on 10/17/19.
+//  Copyright © 2019 Floware. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>

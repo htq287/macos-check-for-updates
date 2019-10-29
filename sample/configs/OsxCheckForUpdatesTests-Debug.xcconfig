@@ -1,5 +1,0 @@
-INFOPLIST_FILE = Tests/OsxCheckForUpdatesTests/Info.plist
-BUNDLE_LOADER = $(TEST_HOST)
-TEST_HOST = $(BUILT_PRODUCTS_DIR)/OsxCheckForUpdates.app/Contents/MacOS/OsxCheckForUpdates
-PRODUCT_IDENTIFIER = $(PRODUCT_IDENTIFIER)
-

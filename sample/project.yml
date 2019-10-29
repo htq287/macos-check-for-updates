@@ -1,44 +1,57 @@
-name: OsxCheckForUpdates
+name: FLWAutoUpdates
 options:
   minimumXcodeGenVersion: 2.2.0
-configFiles:
-  Debug: configs/Debug.xcconfig
-  Release: configs/Release.xcconfig
+  createIntermediateGroups: true
 targets:
-  OsxCheckForUpdates:
+  #macOS application
+  FLWAutoUpdates:
     platform: macOS
+    deploymentTarget: "10.14"
     type: application
     sources:
-      - OsxCheckForUpdates
-    configFiles:
-      Debug: configs/OsxCheckForUpdates-Debug.xcconfig
-      Release: configs/OsxCheckForUpdates-Release.xcconfig
+      - FLWAutoUpdates
     dependencies:
-      - target: Core
-      - carthage: Sparkle
+      - target: CoreFLWAutoUpdates
+    configFiles:
+      Debug: configs/FLWAutoUpdates-Debug.xcconfig
+      Release: configs/FLWAutoUpdates-Release.xcconfig
     scheme:
       environmentVariables:
         ENABLE_SIGNPOST: YES
-  OsxCheckForUpdatesTests:
+  # Framework Targets
+  CoreFLWAutoUpdates:
+    platform: macOS
+    type: framework
+    deploymentTarget: "10.14"
+    sources:
+      - CoreFLWAutoUpdates
+    configFiles:
+      Debug: configs/CoreFLWAutoUpdates-Debug.xcconfig
+      Release: configs/CoreFLWAutoUpdates-Release.xcconfig
+  #Test Targets
+  FLWAutoUpdatesTests:
     platform: macOS
     type: bundle.unit-test
     configFiles:
-      Debug: configs/OsxCheckForUpdatesTests-Debug.xcconfig
-      Release: configs/OsxCheckForUpdatesTests-Release.xcconfig
+      Debug: configs/FLWAutoUpdatesTests.xcconfig
     sources:
-      - Tests/
+      - Tests/FLWAutoUpdatesTests
     dependencies:
-      - target: OsxCheckForUpdates
-      - target: Core
+      - target: FLWAutoUpdates
     scheme:
       testTargets:
-        - OsxCheckForUpdatesTests
+        - FLWAutoUpdatesTests
       gatherCoverageData: true
-  Core:
+  CoreFLWAutoUpdatesTests:
     platform: macOS
-    type: framework
-    sources:
-      - Core/
+    type: bundle.unit-test
     configFiles:
-      Debug: configs/Core.xcconfig
-      Release: configs/Core.xcconfig
+      Debug: configs/CoreFLWAutoUpdatesTests.xcconfig
+    sources:
+      - Tests/CoreFLWAutoUpdatesTests
+    dependencies:
+      - target: CoreFLWAutoUpdates
+    scheme:
+      testTargets:
+        - CoreFLWAutoUpdatesTests
+      gatherCoverageData: true

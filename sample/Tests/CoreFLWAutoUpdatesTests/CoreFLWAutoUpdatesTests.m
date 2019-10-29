@@ -1,18 +1,18 @@
 //
-//  OsxCheckForUpdatesTests.m
-//  OsxCheckForUpdatesTests
+//  CoreFLWAutoUpdatesTests.m
+//  CoreFLWAutoUpdatesTests
 //
-//  Created by Hung Truong on 5/6/19.
-//  Copyright © 2019 Hung Truong. All rights reserved.
+//  Created by Created by Hung Q. Truong on 10/17/19.
+//  Copyright © 2019 Floware. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface OsxCheckForUpdatesTests : XCTestCase
+@interface CoreFLWAutoUpdatesTests : XCTestCase
 
 @end
 
-@implementation OsxCheckForUpdatesTests
+@implementation CoreFLWAutoUpdatesTests
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -21,7 +21,6 @@
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
 }
-
 
 - (void)testExample {
     // This is an example of a functional test case.

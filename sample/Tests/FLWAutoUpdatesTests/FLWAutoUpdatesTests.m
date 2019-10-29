@@ -1,17 +1,18 @@
 //
-//  UtilsTests.m
-//  OsxCheckForUpdatesTests
+//  FLWAutoUpdatesTests.m
+//  FLWAutoUpdatesTests
 //
-//  Created by Hung Truong on 5/6/19.
+//  Created by Created by Hung Q. Truong on 10/17/19.
+//  Copyright © 2019 Floware. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface UtilsTests : XCTestCase
+@interface FLWAutoUpdatesTests : XCTestCase
 
 @end
 
-@implementation UtilsTests
+@implementation FLWAutoUpdatesTests
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.
