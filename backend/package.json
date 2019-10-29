@@ -37,7 +37,7 @@
     "express-jwt": "^5.3.1",
     "express-session": "^1.16.2",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.6.9",
+    "mongoose": "^5.7.5",
     "mongoose-unique-validator": "^2.0.3",
     "multer": "^1.4.1",
     "nodemailer": "^6.2.1",
