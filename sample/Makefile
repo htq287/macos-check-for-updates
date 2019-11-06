@@ -45,6 +45,9 @@ print:
 
 all: clean build
 
+init-proj: 
+	sh pods-init-workspace.sh
+
 clean:
 	-@rm -rfv $(BUILD_DIR)
 

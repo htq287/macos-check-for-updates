@@ -15,6 +15,7 @@ xcuserdata/
 *.xccheckout
 *.xcscmblueprint
 
+Pods/
 Carthage/
 build/
 

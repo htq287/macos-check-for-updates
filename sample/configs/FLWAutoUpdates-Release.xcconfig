@@ -1,3 +1,4 @@
 #include "Base.xcconfig"
+#include "Pods/Target Support Files/Pods-FLWAutoUpdates/Pods-FLWAutoUpdates.release.xcconfig"
 
 PRODUCT_BUNDLE_IDENTIFIER = com.floware.FLWAutoUpdates
