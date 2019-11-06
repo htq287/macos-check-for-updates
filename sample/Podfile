@@ -6,6 +6,7 @@ target 'CoreFLWAutoUpdates' do
   use_frameworks!
 
   # Pods for CoreFLWAutoUpdates
+  pod 'Sparkle'
 
   target 'CoreFLWAutoUpdatesTests' do
     inherit! :search_paths
@@ -19,6 +20,7 @@ target 'FLWAutoUpdates' do
   use_frameworks!
 
   # Pods for FLWAutoUpdates
+  pod 'Sparkle'
 
   target 'FLWAutoUpdatesTests' do
     inherit! :search_paths

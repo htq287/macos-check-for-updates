@@ -26,6 +26,10 @@
 	<string>Copyright © 2019 Floware. All rights reserved.</string>
 	<key>NSMainStoryboardFile</key>
 	<string>Main</string>
+	<key>SUFeedURL</key>
+	<string>https://rilthotapis.com/files/v1/feedcast.xml</string>
+	<key>SUPublicEDKey</key>
+	<string>eRFPLZuNM6m8bltmtpPX4fzKbufI1z6rKJHtgIIsllk=</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 </dict>

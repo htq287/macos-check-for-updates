@@ -7,15 +7,20 @@
 //
 
 #import "AppDelegate.h"
+#import <Sparkle/Sparkle.h>
 
 @interface AppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation AppDelegate {
+    SUUpdater *_updater;
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    
+    _updater = [SUUpdater sharedUpdater];
 }
 
 
@@ -23,5 +28,9 @@
     // Insert code here to tear down your application
 }
 
+- (IBAction)checkForUpdates:(id)sender
+{
+    [_updater checkForUpdates:nil];
+}
 
 @end
