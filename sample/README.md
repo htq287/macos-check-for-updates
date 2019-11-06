@@ -9,16 +9,13 @@ Welcome to FLWAutoUpdates
 # Features
 
 # Building Projects
-**Generate xcodeproj**
+Generate project
+  - Install the latest version of [XCodeGen](https://github.com/yonaskolb/XcodeGen)
+  - Install the lastest version of [CocoaPods](https://cocoapods.org/)
 
-Install the latest version of [XCodeGen](https://github.com/yonaskolb/XcodeGen)
+Then generate the project: `$ make init-proj` or `$ sh pods-init-workspace.sh`
 
-Then generate xcodeproj.
-```sh
-xcodegen
-```
-
-Open the xcodeproj, build and run.
+Open the `.xcworkspace`, build and run.
 
 # License
 
